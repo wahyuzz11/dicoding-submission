@@ -53,9 +53,7 @@ async function postPredictHandler(request, h) {
     const response = h.response({
       status: "success",
       message:
-        confidenceScore > 99
-          ? "Model is predicted successfully."
-          : "Model is predicted successfully but under threshold. Please use the correct picture",
+       "Model is predicted successfully",
       data,
     });
 
